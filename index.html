@@ -5,7 +5,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="resources/js/app.js"></script>
     <link rel="stylesheet" href="resources/css/style.css" />
   </head>
   <body style="overflow: auto">
@@ -27,6 +26,7 @@
             class="flex relative flex-col h-full p-5 bg-cardPrimary text-primary rounded-lg w-full overflow-y-auto pb-20 md:pb-5"
           >
             <div
+              id="togglediv"
               class="block lg:hidden p-5 z-10 text-primary absolute right-0 top-0 cursor-pointer text-2xl"
             >
               <svg
@@ -272,7 +272,7 @@
                 <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
                 <circle cx="12" cy="7" r="4"></circle>
               </svg></button
-            ><button type="button">
+            ><button id="toggle" type="button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -898,7 +898,9 @@
                   <div class="text-lg font-semibold text-white">
                     2nd Place at HackOdisha 3.0
                   </div>
-                  <div class="text-primary">National level Hackathon</div>
+                  <div class="text-primary">
+                    National level Hackathon organised by NITR.
+                  </div>
                 </div>
                 <div class="flex items-end text-light">2023</div>
               </div>
@@ -963,10 +965,12 @@
                 <div class="flex items-end text-light">2018</div>
               </div>
             </section>
-            <footer class="mt-4 border-t border-gray-300 text-center py-4 text-primary">
+            <footer
+              class="mt-4 border-t border-gray-300 text-center py-4 text-primary"
+            >
               ALL RIGHTS REVERSED &#128540; &copy; 2023
-          </footer>
-          
+            </footer>
+            <script src="/resources/js/app.js"></script>
           </div>
         </div>
       </main>
