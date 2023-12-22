@@ -554,6 +554,9 @@ video {
 .bg-btnHighlight {
   background-color: var(--btn-highlight);
 }
+.text-light {
+  color: #7734E7;
+}
 .bg-cardPrimary {
   background-color: var(--card-primary);
 }
@@ -677,6 +680,7 @@ video {
 .text-secondary {
   color: var(--text-secondary);
 }
+
 .text-zinc-200 {
   --tw-text-opacity: 1;
   color: rgb(228 228 231 / var(--tw-text-opacity));
